@@ -1,0 +1,112 @@
+#menu, #login {
+  background:		@nordlicht-green-d;
+  background-repeat:	no-repeat;
+  background-position:	center center;
+  background-image:	url(../img/nordlicht/nordlicht.jpg);
+  background-size:	cover;
+}
+
+@nearly-black:		rgb(22, 22, 39);
+@nordlicht-purple-d:	rgb(164, 159, 166);	
+@nordlicht-purple-d:	rgb(175, 0, 249);
+@nordlicht-purple-l:	rgb(140, 1, 198);	
+@nordlicht-white-d:	rgb(255, 253, 242);	
+@nordlicht-white-l:	rgb(253, 253, 244);	
+@nordlicht-green-d:	rgb(80, 128, 128);	
+@nordlicht-green-l:	rgb(98, 164, 118);
+@nordlicht-orange-l:	rgb(229, 135, 66);	
+@nordlicht-orange-d:	rgb(229, 112, 27);
+@nordlicht-red-l:	rgb(163, 12, 1);	
+@nordlicht-red-d:	rgb(216, 14, 0);	
+@nordlicht-sand-d:	rgb(84, 61, 46);	
+@icinga-blue:		rgb(53,77,88);
+
+@color-ok:			@nordlicht-green-l;
+@color-critical:		@nordlicht-red-d;	
+@color-critical-handled:	@nordlicht-red-l;	
+@color-warning:			@nordlicht-orange-d;
+@color-warning-handled:		@nordlicht-orange-l;
+@color-unknown:			@nordlicht-purple-d;
+@color-unknown-handled:		@nordlicht-purple-l;
+
+@menu-bg-color:			@nordlicht-green-d;
+@menu-color:			@nordlicht-white-d;
+@menu-active-bg-color:		@nearly-black;
+@menu-highlight-color:		@nordlicht-orange-l;
+@menu-2ndlvl-color:		@nordlicht-white-l;
+@menu-2ndlvl-highlight-color:	@nordlicht-orange-l;
+@menu-flyout-color:		@nordlicht-white-d;
+@menu-flyout-bg-color:		@nearly-black;	
+
+.action-link {
+  color: @nordlicht-green-d;
+}
+
+@tr-active-color: rgb(186, 216, 216); 
+@tr-hover-color: rgb(230, 242, 242); 
+
+#header {
+  background: -webkit-linear-gradient(left, @nearly-black 80%, @nordlicht-green-l, @nordlicht-green-d); 
+  background: -o-linear-gradient(left, @nearly-black 80%, @nordlicht-green-l, @nordlicht-green-d); 
+  background: -moz-linear-gradient(left, @nearly-black 80%, @nordlicht-green-l, @nordlicht-green-d);
+  background: linear-gradient(left, @nearly-black 80%, @nordlicht-green-l, @nordlicht-green-d); 
+}
+
+#layout {
+  background: @nordlicht-white-l; 
+  color: @nordlicht-sand-d;
+}
+
+#header-logo-container {
+  background: @nearly-black;
+}
+
+.tabs > li > a {
+  background: @nearly-black;
+  color: @nordlicht-white-l;
+}
+
+.tabs > li.active > a, .tabs > li > a:focus {
+  background: @nordlicht-white-l;
+  border: 1px solid @nordlicht-white-l;
+  color: @nearly-black;
+}
+
+.tabs > li > .close-container-control {
+  background: none;
+}
+
+.controls {
+  background: @nordlicht-white-l;
+}
+
+.impact {
+  .transition(background-color 2s 1s linear !important);
+  background-color: rgb(162, 214, 178) !important;
+}
+
+.impact > .controls, .impact li.active a {
+  .transition(background-color 2s 1s linear !important);
+  background-color:  !important;
+}
+
+a:focus,
+button:focus,
+input[type="checkbox"]:focus {
+  outline: none;
+  outline-offset: none;
+}
+
+#layout:not(.minimal-layout).sidebar-collapsed #menu .nav-level-1 > .nav-item.hover,
+#layout:not(.minimal-layout) #menu .nav-level-1 > .nav-item:not(.active).hover {
+  > .nav-level-2 {
+    > .nav-item {
+      > a {
+        &:hover, &:focus {
+          color: @nearly-black;
+          background-color: @nordlicht-orange-l;
+        }
+      }
+    }
+  }
+}
