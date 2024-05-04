@@ -1,3 +1,5 @@
+*This repository is archived.*
+
 # This is theme Nordlicht for Icinga Web 2
 I started this theme just for fun; then it was half completed, and I forgot it.
 
